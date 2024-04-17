@@ -530,7 +530,6 @@ h2 {
   top: 52%;
   color: var(--prussian-blue);
   z-index: 3;
-  letter-spacing: 0.25px;
   overflow: hidden;
   min-width: fit-content;
   height: fit-content;
@@ -619,8 +618,6 @@ footer p {
   color: #fff;
   font-weight: 700;
   z-index: 3;
-  /*noinspection CssNonIntegerLengthInPixels*/
-  letter-spacing: 0.25px;
   overflow: hidden;
   min-width: fit-content;
   height: fit-content;
@@ -661,27 +658,6 @@ footer p {
   top: 11.72rem;
   z-index: 2;
 }
-
-/*.card-sm-vertical.flex-container::before {*/
-/*  content: "";*/
-/*  position: absolute;*/
-/*  inset: 0;*/
-/*  background: linear-gradient(0deg, rgb(0 0 0 / 50%) 0%, rgb(0 0 0 / 0%) 100%);*/
-/*  border-radius: 12px;*/
-/*  opacity: 1;*/
-/*  height: 50%;*/
-/*  top: 11.72rem;*/
-/*  z-index: 2;*/
-/*}*/
-
-/*.card-md-horizontal.flex-container.flex-wrap.vertical-md-margin {*/
-/*  transform: translateY(3.375rem);*/
-/*  transition-duration: 0.25s;*/
-/*  transition-timing-function: ease;*/
-/*  transition-delay: 0.05s;*/
-/*  !*transition-behavior: normal;*!*/
-/*  transition-property: transform;*/
-/*}*/
 
 section.section-margin-top:nth-child(4) > div:nth-child(3) > span:nth-child(1) {
   font-size: 1.25rem;
@@ -793,7 +769,7 @@ ul.small-card-bottom-span {
   list-style: none;
   display: flex;
   gap: .5rem;
-  border-top: .50px solid var(--prussian-blue);
+  border-top: .05rem solid var(--prussian-blue);
   padding-top: .5rem;
   width: 200px;
 }
