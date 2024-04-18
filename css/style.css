@@ -667,10 +667,14 @@ section.section-margin-top:nth-child(4) > div:nth-child(3) > span:nth-child(1) {
   margin: 1rem 0 0 1rem;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
+  transition: max-height 0.4s ease-in-out;
 }
 
-.faq-button:focus + .faq-answer {
+/*.faq-button:focus + .faq-answer {*/
+/*  max-height: 500px;*/
+/*}*/
+
+.faq-answer:target {
   max-height: 500px;
 }
 

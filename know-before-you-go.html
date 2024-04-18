@@ -89,11 +89,7 @@
             airport bigger so that bigger planes can come to the island.
           </p>
           <div class="flex-container space-evenly margin-top-content-container">
-            <img
-              class="kby-icon"
-              src="img/airplane.svg"
-              alt="airplane icon"
-            />
+            <img class="kby-icon" src="img/airplane.svg" alt="airplane icon" />
             <img
               class="kby-icon"
               src="img/cruise-ship.svg"
@@ -103,7 +99,7 @@
           </div>
         </section>
 
-      <!--
+        <!--
       
       CULTURE
 
@@ -120,15 +116,11 @@
           <div class="flex-container space-evenly margin-top-content-container">
             <img class="kby-icon" src="img/cuisine.svg" alt="cuisine icon" />
             <img class="kby-icon" src="img/smile.svg" alt="smile icon" />
-            <img
-              class="kby-icon"
-              src="img/language.svg"
-              alt="language icon"
-            />
+            <img class="kby-icon" src="img/language.svg" alt="language icon" />
           </div>
         </section>
 
-      <!--
+        <!--
       
       FAQ
 
@@ -136,51 +128,68 @@
         <section class="section-margin-top">
           <h2>Frequently Asked Questions</h2>
           <div class="faq-item margin-top-content-container text-center">
-            <button class="faq-button">
-              What is the best time to visit Taniti?
-            </button>
-            <div class="faq-answer">
+            <a href="#answer1"
+              ><button class="faq-button">
+                What is the best time to visit Taniti?
+              </button>
+            </a>
+            <div id="answer1" class="faq-answer">
               Taniti enjoys a warm tropical climate year-round, with balmy
               summers and mild winters. Perfect for outdoor activities and beach
               relaxation.
             </div>
           </div>
           <div class="faq-item margin-top-content-container text-center">
-            <button class="faq-button">What is the currency in Taniti?</button>
-            <div class="faq-answer">
+            <a href="#answer2"
+              ><button class="faq-button">
+                What is the currency in Taniti?
+              </button></a
+            >
+            <div id="answer2" class="faq-answer">
               Taniti uses the U.S. dollar as its currency, with many businesses
               accepting euros and yen. Major credit cards are widely accepted.
             </div>
           </div>
           <div class="faq-item margin-top-content-container text-center">
-            <button class="faq-button">
-              What languages are spoken in Taniti?
-            </button>
-            <div class="faq-answer">
+            <a href="#answer3"
+              ><button class="faq-button">
+                What languages are spoken in Taniti?
+              </button>
+            </a>
+            <div id="answer3" class="faq-answer">
               While many younger Tanitians speak fluent English, especially in
               urban areas, you'll find less English spoken in rural areas,
               particularly by older residents.
             </div>
           </div>
           <div class="faq-item margin-top-content-container text-center">
-            <button class="faq-button">What is the time zone in Taniti?</button>
-            <div class="faq-answer">
+            <a href="#answer4"
+              ><button class="faq-button">
+                What is the time zone in Taniti?
+              </button></a
+            >
+            <div id="answer4" class="faq-answer">
               Taniti is in the Pacific Time Zone (PT), which is 8 hours behind
               Coordinated Universal Time (UTC-8).
             </div>
           </div>
           <div class="faq-item margin-top-content-container text-center">
-            <button class="faq-button">What is the voltage in Taniti?</button>
-            <div class="faq-answer">
+            <a href="#answer5"
+              ><button class="faq-button">
+                What is the voltage in Taniti?
+              </button></a>
+            <div id="answer5" class="faq-answer">
               The standard voltage in Taniti is 120V, same as in the United
               States. The standard frequency is 60Hz.
             </div>
           </div>
           <div class="faq-item margin-top-content-container text-center">
-            <button class="faq-button">
-              What's the alcohol policy in Taniti?
-            </button>
-            <div class="faq-answer">
+            <a href="#answer6"
+              ><button class="faq-button">
+                What's the alcohol policy in Taniti?
+              </button>
+            </a>
+            <div id="answer6" class="faq-answer">
               You can't buy or serve alcohol from midnight until 9:00 a.m. The
               legal drinking age on Taniti is 18, but it's not enforced
               strictly.
@@ -188,7 +197,7 @@
           </div>
         </section>
 
-      <!--
+        <!--
 
         FOOTER
 
@@ -242,5 +251,17 @@
         </footer>
       </main>
     </div>
+    <script>
+      document.querySelectorAll(".faq-question").forEach((item) => {
+        item.addEventListener("click", (event) => {
+          event.preventDefault();
+          const answer = document.querySelector(
+            event.target.getAttribute("href"),
+          );
+          answer.style.maxHeight =
+            answer.style.maxHeight === "0px" ? "500px" : "0px";
+        });
+      });
+    </script>
   </body>
 </html>
